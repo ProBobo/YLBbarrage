@@ -22,7 +22,7 @@ pod 'YLBbarrage'
 
 ## Author
 
-ProBobo, libo.yu@quvideo.com
+ProBobo
 
 ## License
 
