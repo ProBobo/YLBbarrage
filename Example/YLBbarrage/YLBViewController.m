@@ -7,6 +7,7 @@
 //
 
 #import "YLBViewController.h"
+#import "YLBLiveRoomViewController.h"
 
 @interface YLBViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    YLBLiveRoomViewController *vc = [[YLBLiveRoomViewController alloc] init];
+    [self addChildViewController:vc];
+    [self.view addSubview:vc.view];
 }
 
 - (void)didReceiveMemoryWarning

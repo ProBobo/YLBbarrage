@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		570570A1BD417EAB39DC733A /* Pods_YLBbarrage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBD8673CFFE42819CA0732D /* Pods_YLBbarrage_Example.framework */; };
+		570570A1BD417EAB39DC733A /* Pods_YLBbarrage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBD8673CFFE42819CA0732D /* Pods_YLBbarrage_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BE35B50F21F88871007898E9 /* YLBLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE35B50E21F88871007898E9 /* YLBLiveRoomViewController.m */; };
 		FA0D4135799CFF54E0BD158C /* Pods_YLBbarrage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65662F18300B42A036E10C8 /* Pods_YLBbarrage_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09ADC9E9B73577054FB3E471 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		09ADC9E9B73577054FB3E471 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1FBD8673CFFE42819CA0732D /* Pods_YLBbarrage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBbarrage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5C7997439DE99311780E39 /* Pods-YLBbarrage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBbarrage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLBbarrage_Tests/Pods-YLBbarrage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		310ED9A8586EA17BE8F6C86D /* Pods-YLBbarrage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBbarrage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLBbarrage_Example/Pods-YLBbarrage_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +64,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3A5AC5FEE282495952937C7 /* YLBbarrage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YLBbarrage.podspec; path = ../YLBbarrage.podspec; sourceTree = "<group>"; };
+		A3A5AC5FEE282495952937C7 /* YLBbarrage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YLBbarrage.podspec; path = ../YLBbarrage.podspec; sourceTree = "<group>"; };
 		A7E94879CE065261F48B6C1B /* Pods-YLBbarrage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBbarrage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLBbarrage_Tests/Pods-YLBbarrage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B3DB882BECF166F03144A791 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B3DB882BECF166F03144A791 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B65662F18300B42A036E10C8 /* Pods_YLBbarrage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBbarrage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE35B50D21F88871007898E9 /* YLBLiveRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBLiveRoomViewController.h; sourceTree = "<group>"; };
+		BE35B50E21F88871007898E9 /* YLBLiveRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBLiveRoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				BE35B50D21F88871007898E9 /* YLBLiveRoomViewController.h */,
+				BE35B50E21F88871007898E9 /* YLBLiveRoomViewController.m */,
 			);
 			name = "Example for YLBbarrage";
 			path = YLBbarrage;
@@ -226,7 +231,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				1C360F79F40681DDF99B5615 /* [CP] Embed Pods Frameworks */,
+				4D828B39140D5702CA9995E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,8 +251,11 @@
 			attributes = {
 				CLASSPREFIX = YLB;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = ProBobo;
+				ORGANIZATIONNAME = yulibo;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4HE8QK2V54;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -295,7 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C360F79F40681DDF99B5615 /* [CP] Embed Pods Frameworks */ = {
+		4D828B39140D5702CA9995E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* YLBAppDelegate.m in Sources */,
+				BE35B50F21F88871007898E9 /* YLBLiveRoomViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* YLBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -504,9 +513,12 @@
 			baseConfigurationReference = 402700C863EC04B1508736AB /* Pods-YLBbarrage_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4HE8QK2V54;
+				ENABLE_TESTABILITY = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLBbarrage/YLBbarrage-Prefix.pch";
 				INFOPLIST_FILE = "YLBbarrage/YLBbarrage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,9 +531,11 @@
 			baseConfigurationReference = 310ED9A8586EA17BE8F6C86D /* Pods-YLBbarrage_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4HE8QK2V54;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLBbarrage/YLBbarrage-Prefix.pch";
 				INFOPLIST_FILE = "YLBbarrage/YLBbarrage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

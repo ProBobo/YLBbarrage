@@ -1,0 +1,6 @@
+framework module YLBbarrage {
+  umbrella header "YLBbarrage-umbrella.h"
+
+  export *
+  module * { export * }
+}
