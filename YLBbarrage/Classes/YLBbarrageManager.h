@@ -19,12 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) void (^configData)(void);/**< 配置数据*/
 
 /**
- 配置初始化数据
- */
-- (void)setUpData:(UIView *)bulletView
-bullet_Room_Array:(NSMutableArray *)bullet_Room_Array;
-
-/**
  弹幕动画
  */
 - (void)refreshRoomBullet:(NSTimeInterval)duration
