@@ -18,6 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YLBbarrage/Classes/**/*",
-  "frameworks": "UIKit"
+  "source_files": "YLBbarrage/Classes/**/*"
 }
