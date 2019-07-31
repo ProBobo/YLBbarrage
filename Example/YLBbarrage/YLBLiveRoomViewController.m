@@ -104,7 +104,7 @@
     _canClick = NO;
     sender.enabled = NO;
     __weak __typeof(sender)weakSender = sender;
-    //    for (int i = 0; i < count; i++)
+    
     {
         UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(-200, 200, 200, 50)];
         _bulletLabel = bulletLabel;
@@ -129,6 +129,8 @@
         }];
         
     }
+    
+    [self showMultiLineBullet];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -138,6 +140,67 @@
     
     if (CGRectContainsPoint(((CALayer *)[_bulletLabel.layer presentationLayer]).frame, touchPoint)) {
         NSLog(@"点击弹幕");
+    }
+}
+#pragma mark - 多条弹幕飘屏
+
+- (void)showMultiLineBullet {
+    __weak __typeof(self)weakSelf = self;
+    CGFloat H = 200 + 100;
+    NSMutableArray *dataArray1 = [@[
+                                   @"弹幕1",
+                                   @"弹幕2",
+                                   @"弹幕3",
+                                   @"弹幕4",
+                                   @"弹幕5",
+                                   @"弹幕6",
+                                   ] mutableCopy];
+    NSMutableArray *dataArray2 = [@[
+                                   @"弹幕1",
+                                   @"弹幕2",
+                                   @"弹幕3",
+                                   @"弹幕4",
+                                   @"弹幕5",
+                                   @"弹幕6",
+                                   ] mutableCopy];
+    NSMutableArray *dataArray3 = [@[
+                                   @"弹幕1",
+                                   @"弹幕2",
+                                   @"弹幕3",
+                                   @"弹幕4",
+                                   @"弹幕5",
+                                   @"弹幕6",
+                                   ] mutableCopy];
+    NSMutableArray *dataArray4 = [@[
+                                   @"弹幕1",
+                                   @"弹幕2",
+                                   @"弹幕3",
+                                   @"弹幕4",
+                                   @"弹幕5",
+                                   @"弹幕6",
+                                   ] mutableCopy];
+    for (int i = 0; i < 4; i++)
+    {
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, H, 200, 50)];
+        bulletLabel.backgroundColor = UIColor.orangeColor;
+        bulletLabel.text = [dataArray1 objectAtIndex:0];
+        bulletLabel.textAlignment = NSTextAlignmentCenter;
+        bulletLabel.layer.masksToBounds = YES;
+        bulletLabel.layer.cornerRadius = bulletLabel.frame.size.height/2.0;
+        [self.view addSubview:bulletLabel];
+        
+        YLBbarrageManager * barrageManager = [[YLBbarrageManager alloc] init];
+        barrageManager.bullet_Room_Array = dataArray1;
+        barrageManager.bulletView = bulletLabel;
+        __weak __typeof(bulletLabel)weakBulletLabel = bulletLabel;
+        [barrageManager refreshRoomBullet:3.0 configData:^{
+            
+        } animations:^{
+            
+        } completion:^(BOOL finished) {
+            [weakBulletLabel removeFromSuperview];
+        }];
+        H = H + 50 + 10;
     }
 }
 

@@ -50,11 +50,11 @@
             }
             [self resetBulletViewX:-self.bulletView.frame.size.width];
         } completion:^(BOOL finished) {
+            self.isAnimation_Room_Bullet = NO;
+            [self.bullet_Room_Array removeObjectAtIndex:0];
             if (completion) {
                 completion(finished);
             }
-            self.isAnimation_Room_Bullet = NO;
-            [self.bullet_Room_Array removeObjectAtIndex:0];
         }];
         
     }
